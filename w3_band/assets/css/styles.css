@@ -1,0 +1,108 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+
+#nav{
+    display: inline-block;
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+/* Đây là selector dùng để chọn thẻ con trực tiếp */
+#nav > li >a {
+    color: #fff;
+    /* Viết hoa */
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    /* nó sẽ ăn theo thuộc tính của line-hight */
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+
+}
+
+#nav .subnav { 
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+#header .search-btn{
+    /* display: inline-block; */
+    float: right;
+    cursor: pointer;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+}
+
+#header .search-icon{
+    font-size: 20px;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+}
+
+#slider {
+    min-height: 500px;
+    background-color: #333;
+}
+
+#content {
+
+}
+
+#footer {
+
+}
